@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>
+            Sporting Machine
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="HOME">
+            <nav>
+                <div class="row">
+                    <ul class="main-nav">
+                        <li><a href="#HOME">HOME</a></li>
+                        <li><a href="#CAROUSEL">CAROUSEL</a></li>
+                        <li><a href="#JOINUS">JOIN US</a></li>
+                        <li><a href="#ABOUTUS">ABOUT US</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hero-text">
+                <h1>ONE STOP<br>&<br>GRAB ALL YOU NEED</h1>
+                <a class="explore" href="#CAROUSEL">Explore us</a>
+            </div>
+        </header>
+        <section id="CAROUSEL" class="CAROUSEL">
+            <div class="trans">
+            </div>
+            <div class="carousel-container">
+                <ion-icon name="arrow-back-sharp" id="prev-btn"></ion-icon>
+                <ion-icon name="arrow-forward-sharp" id="next-btn"></ion-icon>
+                <div class="carousel-slide">
+                    <img src="img/athletics.jpg" id="lastClone">
+                    <img src="img/basketball.jpg">
+                    <img src="img/boxing.jpg">
+                    <img src="img/tennis.jpg">
+                    <img src="img/hockey.jpg">
+                    <img src="img/football.jpg">
+                    <img src="img/athletics.jpg">
+                    <img src="img/basketball.jpg" id="firstClone">
+                </div>
+            </div>
+        </section>
+        <section id="JOINUS">
+            <div class="trans">
+            </div>
+            
+            <div class="container">
+                <div class="signUp">Sign Up</div>
+                <div class="signIn">Sign In</div>    
+                <div class="signUp-form">
+                    <input type="text" placeholder="Username" class="input" required><br>
+                    <input type="password" placeholder="Password" class="input" required><br>
+                    <input type="email" placeholder="Email Address" class="input" required><br>
+                    <input type="text" placeholder="Phone Number" class="input" required><br>
+                    <div class="button">Create account</div>
+                </div>
+                <div class="signIn-form">
+                    <input type="text" placeholder="Username" class="input" required><br>
+                    <input type="password" placeholder="Password" class="input" required><br>
+                    <div class="button">Log In</div><br>
+                    <span> <a href="#">I forgot my password</a></span><br><br>
+                    <div class="or">OR <br> Login with</div>
+                    <hr>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+                   
+        </section>  
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script src="jquery.waypoints.min.js"></script>
+        <script src="animation.js"></script>
+    </body>
+</html>
