@@ -1,0 +1,257 @@
+/* -------------------------------- */
+/* general styling */
+/* -------------------------------- */
+
+html{
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "lato", "arial";
+    color: white;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+body{
+    font-family:"lato";
+    padding:0px;
+    margin:0px;
+    font-weight: normal;
+}
+.row{
+    margin:0 auto;
+    max-width: 1140px;
+}
+/* -------------------------------- */
+/* header */
+/* -------------------------------- */
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/home.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main-nav{
+    margin-left: 0px;
+    float:right;
+    list-style: none;
+    background-attachment: fixed;
+}
+.main-nav li{
+    display: inline-block;
+}
+.main-nav li a{
+    font-weight: 300;
+    color:white;
+    margin:20px 20px 0px 0px;
+    transition: color 0.5s;
+    text-decoration: none;
+    /* #42E2B8 */
+}
+ .main-nav li a:hover{
+    color:#F77F00;
+    transition: color 0.5s;
+}
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.555);
+}
+.sticky .main-nav li a{
+    font-weight: 300;
+    color:black;
+    margin:20px 20px 0px 0px;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+.sticky .main-nav li a:hover{
+    color:#F77F00;
+    transition: color 0.2s;
+}
+/* -------------------------------- */
+/* hero text */
+/* -------------------------------- */
+.hero-text{
+    position: absolute;
+    background-color:rgba(255, 255, 255, 0.322);
+    margin: 250px 70px;
+    padding: 20px 30px 40px 30px;
+}
+/* .container{
+    border: 2px solid red;
+    margin:20px 5px;
+} */
+.hero-text h1{
+    color: black;
+    font-weight: 300;
+    font-family: "lato","aerial";
+    
+}
+.hero-text a{
+    text-decoration: none;
+    color: #F77F00;
+    font-weight: bold;
+    margin:2px 2px;
+    padding: 7px 7px;
+    background-color: transparent;
+    transition: color, background-color, border 0.5s ;
+}
+.hero-text a:hover{
+    color:white;
+    background-color: black;
+    border:2px solid #F77F00;
+    transition: color, background-color, border 0.5s ;
+}
+#CAROUSEL{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/lockerRoom.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#prev-btn{
+    position: absolute;
+    top:50%;
+    z-index:10;
+    left:0%;
+    font-size:30px;
+    color:white;
+    opacity:0.5;
+    cursor:pointer;
+}
+#next-btn{
+    position: absolute;
+    top:50%;
+    z-index:10;
+    right:5%;
+    font-size:30px;
+    color:white;
+    opacity:0.5;
+    cursor:pointer;
+}
+.carousel-container{
+    position: relative;
+    width:1000px;
+    margin:auto;
+    overflow:hidden;
+    box-shadow: black;
+}
+.carousel-slide{
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+    width:100%;
+    height: 500px;
+
+}
+#JOINUS{
+    background-image: url(img/loginPage.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.trans{
+    height:100px;
+    width:100%;
+}
+.container{
+    position: static;
+    background-color: rgba(255, 255, 255, 0.397);
+    width: 450px;
+    height: auto;
+    float:right;
+    margin-right:40px;
+    padding-top:10px;
+}
+.signUp, .signIn{
+    font-weight: normal;
+    width:49%;
+    height:60px;
+    float:left;
+    text-align:center;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+.signUp{
+    border-right: 1px solid black;
+    padding-left:1px;
+}
+.signUp-form, .signIn-form{
+    box-sizing: border-box;
+    padding: 40px;
+    clear: both;
+    width:100%;
+    height: 450px;
+}
+.input{
+    width:100%;
+    box-sizing: border-box;
+    padding:20px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    border-radius: 50px;
+    color : black;
+    font-size: 15px;
+    outline:none;
+    transition: all 0.3s;
+    height:50px;
+}
+.input:focus{
+    border:1px solid #F77F00;
+}
+.button{
+    margin-left: 75px;
+    width:200px;
+    background-color: #F77F00;
+    height: 30px;;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 50px;
+    vertical-align: middle;
+    padding:2px;
+    cursor:pointer;
+}
+.signIn-form span a:link,
+.signIn-form span a:visited{
+    text-decoration: none;
+    color:black;
+    font-weight: normal;
+}
+.signIn-form{
+    font-size: 20px;
+    font-weight: normal;
+}
+.or{
+    font-weight: bold;
+    text-align: center;
+    color:black;
+}
+.features ul{
+    list-style: none;
+    
+}
+.features li{
+    color : white;
+    vertical-align: middle;
+    padding-bottom: 15px;
+}
+.features ion-icon{
+    font-size: 40px;
+    margin: 0px;
+}
+ion-icon{
+    margin-left: 20px;
+    padding-right:10px;
+    font-size: 35px;
+    color:black;
+}
+ion-icon:first-child{
+    margin-left: 60px;
+}
+ion-icon:hover{
+    color:#F77F00;
+}
